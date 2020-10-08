@@ -1,0 +1,48 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title> The test (best) page </title>
+  <link rel="shortcut icon" href="{% static 'imgs/icon1.ico' %}"> 
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+
+<div id="header">
+  <a href="{% url 'home' %}"><img src="{% static "imgs/kclogo.png" %}" alt="" height="22.5" width="35"/></a>&nbsp;
+	<a id="headerLink" href="{% url 'home' %}">Main Page</a>
+	<span class="hidden">-</span>
+	<span id="headerSubtitle">Kevin Rules</span>
+</div>
+
+
+<hr class="hidden"/>
+
+<div id="menu">
+	<a href="{% url 'home' %}"><b>	home	</b></a>
+	<a href="{% url 'construction' %}">		i do stuff	</a>
+	<a href="{% url 'construction' %}">		i see stuff	</a>
+	<span class="right">
+		<a href="{% url 'construction' %}">you say stuff to me	</a>
+		<a href="{% url 'construction' %}">you read stuff about me</a>
+	</span>
+</div>
+
+<hr class="hidden"/>
+<div id="content">
+<div id="nav">
+	<ul>
+		<li><a href="{% url 'home' %}"><b>format_page</b></a></li>
+		<li><a href="{% url 'construction' %}">test1</a></li>
+		<li><a href="{% url 'construction' %}">test2</a></li>
+		<li><a href="{% url 'construction' %}">test3</a></li>
+	</ul>
+</div>
+<hr class="hidden">
+
+<div id="main">
+  {% block content %}
+  {% endblock content %}
+</div>
+</div>
+</html>
