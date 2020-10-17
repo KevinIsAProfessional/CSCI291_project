@@ -32,8 +32,10 @@
 <div id="content">
 <div id="nav">
 	<ul>
-		<li><a href="{% url 'home' %}"><b>format_page</b></a></li>
-		<li><a href="{% url 'construction' %}">test1</a></li>
+    <li><a href="{% url 'home' %}"><b>home/</b></a></li>
+		<li><a href="{% url 'cypher' %}">cyphers/</a></li>
+    {% block cypherList %}
+    {% endblock cypherList %}
 		<li><a href="{% url 'construction' %}">test2</a></li>
 		<li><a href="{% url 'construction' %}">test3</a></li>
 	</ul>

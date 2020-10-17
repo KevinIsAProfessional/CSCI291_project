@@ -7,3 +7,6 @@ class HomePageView(TemplateView):
 
 class ConstructionPageView(TemplateView):
     template_name = 'construction.html'
+
+class CypherPageView(TemplateView):
+    template_name = 'cypher.html'
