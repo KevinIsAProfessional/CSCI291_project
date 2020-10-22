@@ -33,21 +33,20 @@
 <div id="nav">
 	<ul>
     <li><a href="{% url 'home' %}">home/</a></li>
-    <li><a href="{% url 'cypher' %}"><b>cyphers/</b></a></li>
-    <ul>
-      <li><a href="{% url 'construction' %}">  caesar/</a></li>
+    <li><a href="{% url 'cypher' %}">cyphers/</a>
+      <ul>
+      <li><a href="{% url 'caesar' %}"><b>caesar/</b></a></li>
       <li><a href="{% url 'construction' %}">  SHA-256/</a></li>  
       <li><a href="{% url 'construction' %}">  TheOtherOne/</a></li>
     </ul>
-		<li><a href="{% url 'construction' %}">test2</a></li>
-		<li><a href="{% url 'construction' %}">test3</a></li>
+    </li>
+    <li><a href="{% url 'construction' %}">The_Construction_Page/</a></li>
 	</ul>
 </div>
 <hr class="hidden">
 
 <div id="main">
-  {% block content %}
-  {% endblock content %}
+  This is where the caesar cypher will go.
 </div>
 </div>
 </html>
