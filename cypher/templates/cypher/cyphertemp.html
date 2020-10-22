@@ -19,7 +19,7 @@
 <hr class="hidden"/>
 
 <div id="menu">
-	<a href="{% url 'home' %}"><b>	home	</b></a>
+	<a href="{% url 'home' %}">	home	</a>
 	<a href="{% url 'construction' %}">		i do stuff	</a>
 	<a href="{% url 'construction' %}">		i see stuff	</a>
 	<span class="right">
@@ -32,8 +32,13 @@
 <div id="content">
 <div id="nav">
 	<ul>
-    <li><a href="{% url 'home' %}"><b>home/</b></a></li>
-		<li><a href="{% url 'cypher' %}">cyphers/</a></li>
+    <li><a href="{% url 'home' %}">home/</a></li>
+    <li><a href="{% url 'cypher' %}"><b>cyphers/</b></a></li>
+    <ul>
+      <li><a href="{% url 'construction' %}">  caesar/</a></li>
+      <li><a href="{% url 'construction' %}">  SHA-256/</a></li>  
+      <li><a href="{% url 'construction' %}">  TheOtherOne/</a></li>
+    </ul>
 		<li><a href="{% url 'construction' %}">test2</a></li>
 		<li><a href="{% url 'construction' %}">test3</a></li>
 	</ul>
