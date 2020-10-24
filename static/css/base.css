@@ -121,7 +121,7 @@ h4 {
 }
 
 #nav li a {
-	display: block;
+	display: inline;
 	margin: 0;
 	padding: 0.8ex 2em 0.8ex 1em;
 }
