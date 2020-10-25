@@ -2,14 +2,50 @@
 {% extends 'base.html' %}
 
 {% block scripts %}
+
 <script>
   function Shift() {
     var userIn = document.getElementById("userIn").value;
-    var shift = document.getElementById("shift").value;
-    var output = "User input: " + userIn + "\r\nShift by: " + shift; 
-    document.getElementById("encrypted").innerHTML = "User input: " + userIn + "<br />Shift by: " + shift; 
+    var shift = parseInt(document.getElementById("shift").value);
+    var shifted = "";
+
+    for (var i=0; i < userIn.length; i++) 
+    {
+      var temp = parseInt(userIn[i].charCodeAt());
+     
+      // uppercase letter, between 65 and 90 
+      if(65 <= temp && temp <= 90) 
+      {
+        temp = temp + shift;  
+        if(temp > 90) 
+        {
+          temp = temp - 90 + 64;
+        }
+      }
+      
+      // lowercase letter, between 97 and 122 
+      else if(97 <= temp && temp <= 122) 
+      {
+        temp = temp + shift;  
+        if(temp > 122) 
+        {
+          temp = temp - 122 + 96;
+        }
+      }
+      
+      else
+      {
+        window.alert("upper and lower case letters only, please");
+        break;
+      } 
+      shifted += String.fromCharCode(temp);
+    }
+
+    var output = "User input: " + userIn + "<br />Shift by: " + shift + "<br /><br />Encoded message: " + shifted;
+    document.getElementById("encrypted").innerHTML = output;
   }
 </script>
+
 {% endblock scripts %}
 
 {% block content %}
