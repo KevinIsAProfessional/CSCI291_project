@@ -17,7 +17,7 @@ pre, code {
 }
 
 a {
-	color: #005386;
+	color: #6B632F;
 }
 
 #header a, #nav a, #menu a {
@@ -30,12 +30,12 @@ a {
 
 #menu {
 	clear: both;
-	color: #069;
+	color: #556B2F;
 	overflow: hidden;
-	background-color: #17a;
+	background-color: #556B2F;
 	padding: 0.7ex;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #069;
+	border-top: 1px solid #556B2F;
+	border-bottom: 1px solid #376B2F;
 }
 
 #menu a {
@@ -51,14 +51,14 @@ a {
 #header {
 	background-color: #eee;
 	clear: both;
-	color: #555;
+	color: #6B632F;
 	font-size: 1.78em;
 	padding: 0.7ex 0.7ex 0.7ex 0.7em;
 }
 
 
 #headerLink {
-	color: #17a;
+	color: #6B632F;
 	margin-left: 5px;
 }
 
@@ -101,7 +101,7 @@ h4 {
 	float: left;
 	margin: 0 1px 0 0;
 	padding: 1em 0;
-	border-right: 1px dotted #ccc;
+	border-right: 1px dotted #6B632F;
 	width: 200px;
 }
 
@@ -117,13 +117,13 @@ h4 {
 }
 
 #nav li ul {
-	padding-left: 0.6em !important;
+	padding-left: 1.8em !important;
 }
 
 #nav li a {
 	display: inline;
 	margin: 0;
-	padding: 0.8ex 2em 0.8ex 1em;
+	padding: 0;
 }
 
 #main {
