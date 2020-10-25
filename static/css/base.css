@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	background-color: #fff;
+	background-color: #edebe6;
 	color:#000;
 	font-family: sans-serif;
 	padding: 0;
@@ -17,7 +17,7 @@ pre, code {
 }
 
 a {
-	color: #6B632F;
+	color: #513D0E;
 }
 
 #header a, #nav a, #menu a {
@@ -25,31 +25,29 @@ a {
 }
 
 #nav a:hover {
-	background-color: #ddd;
+	background-color: #cac4b6;
 }
 
 #menu {
 	clear: both;
 	color: #556B2F;
 	overflow: hidden;
-	background-color: #556B2F;
+	background-color: #44510e;
 	padding: 0.7ex;
-	border-top: 1px solid #556B2F;
-	border-bottom: 1px solid #376B2F;
 }
 
 #menu a {
 	padding: 0.5ex 1ex;
-	color: #fff;
+	color: #cac4b6;
 }
 
 #menu a:hover {
-	background-color: #069;
+	background-color: #40300b;
 }
 
 
 #header {
-	background-color: #eee;
+	background-color: #cac4b6;
 	clear: both;
 	color: #6B632F;
 	font-size: 1.78em;
@@ -58,7 +56,7 @@ a {
 
 
 #headerLink {
-	color: #6B632F;
+	color: #513D0E;
 	margin-left: 5px;
 }
 
@@ -92,12 +90,12 @@ h4 {
 	clear: both;
 	margin: 0;
 	padding: 0;
-	/*background color: #fff;
-	 * overflow: hidden;*/
+	background color: #edebe6;
+	/* overflow: hidden;*/
 }
 
 #nav {
-	/*background-color: #fff;*/
+	background-color: #edebe6;
 	float: left;
 	margin: 0 1px 0 0;
 	padding: 1em 0;
@@ -149,6 +147,3 @@ h4 {
 }
 
 
-#main title {
-	text-decoration: line-through;
-}
