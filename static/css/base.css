@@ -42,7 +42,7 @@ a {
 }
 
 #menu a:hover {
-	background-color: #40300b;
+	background-color: #513d0e;
 }
 
 
@@ -101,7 +101,7 @@ h4 {
 	padding: 1em 0;
 	border-right: 1px dotted #6B632F;
 	width: 200px;
-  height: 400px;
+  height: 500px;
 }
 
 #nav ul {
