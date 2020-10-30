@@ -24,7 +24,7 @@ SECRET_KEY = '!v_$(y%=+cgli+r11)goqvh8r2#p)=(l1(ie#o!+w%p!go)(ae'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
     'cypher.apps.CypherConfig',
+    'login.apps.LoginConfig',
 ]
 
 MIDDLEWARE = [
