@@ -8,3 +8,5 @@ class HomePageView(TemplateView):
 class ConstructionPageView(TemplateView):
     template_name = 'construction.html'
 
+class PhotoPageView(TemplateView):
+    template_name = 'photos.html'
