@@ -2,13 +2,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p>This is a test</p>
-<p><p>
-Here lies some useless code, just to prove I know computer stuff;<p>
 
-<pre><code>
-fun(foo) {
-	print("You said: ", foo);
-}
-</code></pre>
+<h1> Welcome to KevinLand.</h1>
+
+<p>Honestly, I'm not sure why I just said that.</p>
+
+<p>This website is a personal project that is intended to be a repository/ record of the other projects and interests that I plan to work on in the coming months or years.</p>
+
+<p>This is an ongoing website, so will be unfinished by definition. Feel free to click around and see what I've completed.</p>
+
+<p>A note on navigation: the overhead links like <a href="{% url 'construction' %}"><b>i do stuff</b></a>  and <a href="{% url 'construction' %}"><b>you say stuff to me</b></a> will take you to different sections of the website dedicated to different things. From there, you can use the navigation bar on the left to explore the section's parts, and you can return to this page by clicking on <a href="{% url 'home' %}"><b>home</b></a> in the top left.</p>
+
 {% endblock content %}
