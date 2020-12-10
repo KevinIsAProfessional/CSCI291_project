@@ -12,10 +12,10 @@ class ProjectsPageView(TemplateView):
     template_name = 'base_projects.html'
 
 class BlogPageView(TemplateView):
-    template_name = 'construction.html'
+    template_name = 'blog.html'
 
 class PhotoPageView(TemplateView):
     template_name = 'photos.html'
     
 class ContactPageView(TemplateView):
-    template_name = 'construction.html'
+    template_name = 'contact.html'
