@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
     'cypher.apps.CypherConfig',
+    'eightbit.apps.EightbitConfig',
 ]
 
 MIDDLEWARE = [

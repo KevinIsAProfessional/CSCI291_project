@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),
     path('', include('cypher.urls')),
+    path('', include('eightbit.urls')),
 ]
