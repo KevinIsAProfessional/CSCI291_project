@@ -7,8 +7,8 @@ class EightBitPageView(TemplateView):
 class ClockPageView(TemplateView):
     template_name = 'eightbit/clock.html'
 
-class RegisterPageView(TemplateView):
-    template_name = 'eightbit/register.html'
+class RegistersPageView(TemplateView):
+    template_name = 'eightbit/registers.html'
 
 class RamPageView(TemplateView):
     template_name = 'eightbit/ram.html'
