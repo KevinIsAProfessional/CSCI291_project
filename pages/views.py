@@ -8,5 +8,14 @@ class HomePageView(TemplateView):
 class ConstructionPageView(TemplateView):
     template_name = 'construction.html'
 
+class ProjectsPageView(TemplateView):
+    tempalte_name = 'construction.html'
+
+class BlogPageView(TemplateView):
+    template_name = 'construction.html'
+
 class PhotoPageView(TemplateView):
     template_name = 'photos.html'
+    
+class ContactPageView(TemplateView):
+    template_name = 'construction.html'
