@@ -9,7 +9,7 @@ class ConstructionPageView(TemplateView):
     template_name = 'construction.html'
 
 class ProjectsPageView(TemplateView):
-    tempalte_name = 'construction.html'
+    template_name = 'base_projects.html'
 
 class BlogPageView(TemplateView):
     template_name = 'construction.html'

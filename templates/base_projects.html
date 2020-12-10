@@ -1,0 +1,30 @@
+<!doctype html>
+
+{% extends 'base.html' %}
+
+{% block projectsnav %}
+  <ul>
+    <li><a href="{% url 'cypher' %}">cyphers/</a>
+      <ul>
+        {% block cyphernav %}
+        {% endblock cyphernav %}
+      </ul>
+    </li>
+    <li><a href="{% url 'projects' %}">8-bit computer/</a>
+      <ul>
+        {% block 8bitnav %}
+        {% endblock 8bitnav %}
+      </ul>
+    </li>
+  </ul>
+{% endblock projectsnav %}
+
+
+{% block content %}
+<h1>Projects Home Page</h1>
+<h4>(aka 'i do stuff')</h4>
+<br>
+Welcome! This is the jumping off point for all of the current and future projects I'm working on. You can navigate to the ones that seem interesting to you by clicking the links on the left.
+<br><br>
+Maybe I'll have more to say about this later.
+{% endblock content %}

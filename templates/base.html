@@ -1,57 +1,76 @@
 <!doctype html>
 {% load static %}
 <html>
-<head>
-	<meta charset="utf-8"/>
-	<title> The test (best) page </title>
-  <link rel="shortcut icon" href="{% static 'imgs/icon1.ico' %}"> 
-  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-  {% block scripts %}
-  {% endblock scripts %}
-</head>
+  <head>
+    <meta charset="utf-8"/>
+    <title> The test (best) page </title>
+    <link rel="shortcut icon" href="{% static 'imgs/icon1.ico' %}"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    {% block scripts %}
+    {% endblock scripts %}
+  </head>
 
-<div id="header">
-  <a href="{% url 'home' %}"><img src="{% static "imgs/kclogo.png" %}" alt="" height="35" width="35"/></a>&nbsp;
-	<a id="headerLink" href="{% url 'home' %}">Guess what</a>
-	<span class="hidden">-</span>
-	<span id="headerSubtitle">Kevin Rules</span>
-</div>
+  <div id="header">
+    <a href="{% url 'home' %}"><img src="{% static "imgs/kclogo.png" %}" alt="" height="35" width="35"/></a>&nbsp;
+    <a id="headerLink" href="{% url 'home' %}">Guess what</a>
+    <span class="hidden">-</span>
+    <span id="headerSubtitle">Kevin Rules</span>
+  </div>
 
 
-<hr class="hidden"/>
+  <hr class="hidden"/>
 
-<div id="menu">
-	<a href="{% url 'home' %}">	home </a>
-	<a href="{% url 'construction' %}">		i do stuff	</a>
-  <a href="{% url 'construction' %}">   i say stuff </a>
-	<a href="{% url 'photos' %}">		i see stuff	</a>
-	<span class="right">
-		<a href="{% url 'construction' %}">you say stuff to me	</a>
-		<a href="{% url 'construction' %}">you read stuff about me</a>
-	</span>
-</div>
+  <div id="menu">
+    <a href="{% url 'home' %}">	home </a>
+    <a href="{% url 'projects' %}">		i do stuff	</a>
+    <a href="{% url 'construction' %}">   i say stuff </a>
+    <a href="{% url 'photos' %}">		i see stuff	</a>
+    <span class="right">
+      <a href="{% url 'construction' %}">you say stuff to me	</a>
+    </span>
+  </div>
 
-<hr class="hidden"/>
-<div id="content">
-<div id="nav">
-	<ul>
-    <li><a href="{% url 'home' %}">home/</a></li>
-		<li>
-      <a href="{% url 'cypher' %}">cyphers/</a>
-      <ul> 
-        <li><a href="{% url 'caesar' %}">caesar/</li>
-        <li><a href="{% url 'sha' %}">sha/</li>
-        <li><a href="{% url 'other' %}">other/</li>
-      </ul>
-    </li>
-		<li><a href="{% url 'construction' %}">construction/</a></li>
-	</ul>
-</div>
-<hr class="hidden">
+  <hr class="hidden"/>
+  <div id="content">
+  <div id="nav">
+    <ul>
+      <li><a href="{% url 'home' %}">home/</a></li>
+      <li>
+        <a href="{% url 'projects' %}">i do stuff/</a>
+        <ul>
+          {% block projectsnav %}
+          {% endblock projectsnav %}
+        </ul>
+      </li>
+      <li>
+        <a href="{% url 'construction' %}">i say stuff/</a>
+        <ul>
+          {% block blognav %}
+          {% endblock blognav %}
+        </ul>
+      </li>
+      <li>
+        <a href="{% url 'photos' %}">i see stuff/</a>
+        <ul>
+          {% block photosnav %}
+          {% endblock photosnav %}
+        </ul>
+      </li>
+      <li>
+        <a href="{% url 'construction' %}">you say stuff to me/</a>
+        <ul>
+          {% block contactnav %}
+          {% endblock contactnav %}
+        </ul>
+      </li>
+      <li><a href="{% url 'construction' %}">construction/</a></li>
+    </ul>
+  </div>
+  <hr class="hidden">
 
-<div id="main">
-  {% block content %}
-  {% endblock content %}
-</div>
-</div>
+  <div id="main">
+    {% block content %}
+    {% endblock content %}
+  </div>
+  </div>
 </html>
